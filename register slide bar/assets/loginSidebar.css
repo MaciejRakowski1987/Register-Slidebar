@@ -1,0 +1,143 @@
+.loginSidebar {
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 410px;
+	transform: translateX(410px);
+	transition: transform 0.4s ease;
+	background: rgba(255,255,255,0.9);
+	z-index: 300;
+	box-shadow: -1px 0px 3px rgba(0,0,0,0.15);
+}
+
+.loginSidebar--visible {
+	transform: translateX(0);
+}
+
+.loginSidebar__closeButton {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+	color: #909495;
+	cursor: pointer;
+}
+
+.loginSidebar__login {
+	padding: 0 40px;
+}
+
+.loginForm__headingBar {
+	margin: 70px auto 50px auto;
+}
+
+.loginForm__icon {
+	height: 24px;
+	width: 24px;
+	position: absolute;
+	left: 13px;
+	top: 9px;
+}
+
+.loginForm__topIconBackground {
+	background: url('../img/hexagon-bg.svg') no-repeat;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.loginForm__heading {
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #909495;
+}
+
+.loginForm {
+	color: #909495;
+}
+
+.loginForm .loginForm__input {
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	border-width: 0 0 1px 0;
+	outline: none;
+	color: #909495;
+	font-size: 12px;
+	display: block;
+	margin-bottom: 5px;
+	background: transparent;
+	box-shadow: none;
+}
+
+.loginForm .loginForm__input:focus {
+	color: #0090f6;
+	font-weight: 700;
+}
+
+
+.loginForm__passwordRecoveryLink {
+	text-align: right;
+	margin: 25px 0;
+	display: block;
+	color: #909495;
+	font-size: 12px;
+	text-decoration: underline;
+	font-weight: 700;
+}
+
+.loginForm__submit {
+	text-align: center;
+	display: block;
+	height: 50px;
+	background: #0090f6;
+	outline: none;
+	width: 100%;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	font-size: 13px;
+	transition: background 0.25s linear;
+}
+
+.loginForm__submit:hover, .loginForm__submit:active {
+	background: #308cff;
+}
+
+.loginSidebar__registration {
+	margin-top: 65px;
+	padding: 0 40px;
+}
+
+.loginSidebar__registrationHeading {
+	font-size: 12px;
+	font-weight: 700;
+	color: #909495;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.loginSidebar__registrationButton {
+	text-align: center;
+	display: block;
+	height: 50px;
+	background: #e6e7e8;
+	outline: none;
+	width: 100%;
+	color: #909495;
+	text-transform: uppercase;
+	border: none;
+	line-height: 50px;
+	font-size: 13px;
+	transition: color 0.25s linear;
+}
+
+.loginSidebar__registrationButton:hover, .loginSidebar__registrationButton:active {
+	color: #308cff;
+}
